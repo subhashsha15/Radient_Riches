@@ -1,0 +1,23 @@
+@import "../../App.scss";
+
+.dealBtn {
+    @extend .default-flex;
+    background-color: #1B88F4;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    height: 48px;
+    width: 292px;
+    border-radius: 12px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    button {
+        all: unset;
+
+    }
+
+}

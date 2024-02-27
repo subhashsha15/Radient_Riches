@@ -1,0 +1,70 @@
+@import "../../App.scss";
+
+.dealCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    height: 425px;
+    width: 333px;
+    border: 1px solid #dadada;
+    border-radius: 12px;
+    padding: 20px;
+    font-family: Inter;
+    background-color: #FFFFFF;
+
+    .dealCard-img {
+        margin-bottom: 40px;
+    }
+
+    .dealCard-info1 {
+        color: #074786;
+        align-self: flex-start;
+        font-size: 14px;
+
+        span:nth-child(1) {
+            margin-right: 20px;
+        }
+        span{
+            background-color: #F2F4F7;
+            padding: 5px;
+            border-radius: 8px;
+        }
+    }
+
+    .dealCard-title {
+        color: #626E79;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        color: #626E79;
+    }
+
+    .dealCard-info2 {
+        align-self: flex-start;
+
+        span:nth-child(1) {
+            font-size: 20px;
+            line-height: 28px;
+            color: #5C6874;
+            margin-right: 10px;
+        }
+
+        span:nth-child(2) {
+            font-size: 14px;
+            line-height: 20px;
+            color: #9FA9B3;
+            margin-right: 10px;
+        }
+
+        span:nth-child(3) {
+            font-size: 13px;
+            line-height: 20px;
+            color: #EF4C5D;
+        }
+    }
+}

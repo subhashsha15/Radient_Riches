@@ -1,0 +1,262 @@
+@import "../../App.scss";
+
+.mainMiddle-container {
+    @extend .default-flex;
+    flex-direction: column;
+    gap: 10rem;
+    margin: 100px auto;
+    width: 1024px;
+    background-color: #FBFCFD;
+
+
+    .mainMiddle-section {
+        @extend .default-flex;
+        height: fit-content;
+        gap: 70px;
+        background-color: #FFFFFF;
+        position: relative;
+
+        .badge-container {
+            position: absolute;
+            top: -55px;
+            left: -42px;
+        }
+
+        .mainMiddle-section-sec1 {
+            @extend .default-flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .product-id {
+                @extend .default-flex;
+                align-self: self-start;
+                color: #626E79;
+                height: 44px;
+                width: 44px;
+                font-size: 20px;
+                border: 2px solid #E1E4E6;
+                border-radius: 50%;
+                margin-left: -45px;
+                margin-top: -50px;
+            }
+
+
+            span {
+                color: #626E79;
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+
+        .mainMiddle-section-sec2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 16px;
+            line-height: 24px;
+
+            p {
+                font-weight: 400;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            .offer-percent {
+                align-self: flex-start;
+                color: #074786;
+                font-size: 13px;
+                border-radius: 4px;
+                background-color: #F2F4F7;
+                padding: 4px;
+            }
+
+            .mainMiddle-section-sec2-para2 {
+                h2 {
+                    color: #2C384A;
+                    font-weight: 700;
+                    margin-bottom: 8px;
+                }
+
+                .highlights-list {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #FFF4ED;
+                    margin-left: 25px;
+                    gap: 12px;
+                    padding: 10px;
+
+                    div {
+                        display: flex;
+                        gap: 15px;
+
+                        .highlights-list-rating {
+                            color: #1B88F4;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                        .highlights-list-title {
+                            color: #4B5665;
+                            font-size: 15px;
+                            font-weight: 400;
+                        }
+                    }
+
+                }
+
+                p {
+                    color: #4B5665;
+                    margin-left: 25px;
+                }
+
+                .additional-feature {
+                    >span {
+                        display: inline-block;
+                        color: #2C384A;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        margin: 8px 0px;
+                    }
+
+                    .additional-feature-items {
+                        margin-left: 25px;
+
+                        img {
+                            margin-right: 8px;
+                        }
+
+                        span {
+                            color: #4B5665;
+                            font-size: 15px;
+                            line-height: 24px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+
+            .show-more-btn {
+                @extend .default-flex;
+                align-self: flex-start;
+                gap: 5px;
+
+                span {
+                    color: #1B88F4;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.rotate-clockwise img {
+                    transform: rotate(180deg);
+                    transition: transform 0.6s ease;
+                }
+
+            }
+        }
+
+        .mainMiddle-section-sec3 {
+            @extend .default-flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .mainMiddle-section-sec3-dealbtn {
+                .dealBtn {
+                    width: 232px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 766px) {
+    .mainMiddle-container {
+        width: 100%;
+        gap: 120px;
+
+        .mainMiddle-section {
+            flex-direction: column;
+            height: 100%;
+            gap: 30px;
+
+            .badge-container {
+                position: absolute;
+                top: 55px;
+                left: -5px;
+                transform: rotate(-90deg);
+
+                .badge-title {
+                    height: 30px;
+                    width: 130px;
+                }
+            }
+
+            .mainMiddle-section-sec1 {
+                .product-id {
+                    display: none;
+                }
+            }
+
+            .mainMiddle-section-sec2 {
+                width: 50%;
+            }
+
+            .mainMiddle-section-sec3 {
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .mainMiddle-container {
+        width: 100%;
+        gap: 120px;
+
+        .mainMiddle-section {
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            gap: 20px;
+
+            .badge-container {
+                position: absolute;
+                top: -47px;
+                left: 20rem;
+            }
+
+            .mainMiddle-section-sec2 {
+                width: 70%;
+            }
+
+            .mainMiddle-section-sec3 {
+                gap: 20px;
+                flex-direction: row-reverse;
+                align-items: self-end;
+                margin-top: -30px;
+
+                .mainMiddle-section-sec3-dealbtn {
+                    .dealBtn {
+                        width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px)and (max-width: 1439px) {
+    .mainMiddle-container {
+        gap: 120px;
+
+        .mainMiddle-section {
+            width: 90%;
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+$primary_olor:#1B88F4;
+$secondary_color:#212731;
+$tertiary_color:#FF7724;
+$primary1_text_color:#4B5665;
+$primary2_text_color:#B6BDC4;
+$secondary_text_color:#2C384A;
+$tertiary_text_color:#FFFFFF;
+
+.default-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

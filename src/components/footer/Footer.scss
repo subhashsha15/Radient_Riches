@@ -1,0 +1,55 @@
+@import "../../App.scss";
+
+.footer {
+    @extend .default-flex;
+    flex-wrap: wrap;
+    gap: 170px;
+    background-color: $secondary_color;
+    height: 352px;
+    font-family: Inter;
+
+    .footer-list:nth-child(1) {
+        margin-top: -35px;
+    }
+
+    .footer-list {
+        @extend .default-flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 25px;
+        color: $tertiary_text_color;
+
+        ul {
+            @extend .default-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+
+            li {
+                list-style: none;
+                color: $primary2_text_color;
+            }
+        }
+    }
+
+    .state {
+        @extend .default-flex;
+        gap: 15px;
+        color: #D1D6DA;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 766px) {
+    .footer {
+        height: 100%;
+        gap: 40px;
+        padding: 50px 8px;
+        .state{
+
+        }
+    }
+}
+
+@media screen and (min-width: 767px)and (max-width: 1023px) {}
