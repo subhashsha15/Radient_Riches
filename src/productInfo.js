@@ -7,7 +7,6 @@ import fiveStar from "/5-star.png";
 const productInfo = [
   {
     id: 1,
-    badgeImg: "",
     badgeTitle: "Best Choice",
     image: productImg,
     imageTitle: "Builder 1",
@@ -31,14 +30,13 @@ const productInfo = [
   },
   {
     id: 2,
-    badgeImg: "",
     badgeTitle: "Best Value",
     image: productImg,
     imageTitle: "Builder 2",
     para1_Heading: "SiteCraft 68-Inch Ultimate Web Design Studio-",
     para1_content: "Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)",
     para2_content: "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
-    discountPercent: "",
+    discountPercent: "15% Off",
     additionalFeature: ["Easy Use"],
     ratingNumber: 9.5,
     ratingTitle: "Excellent",
@@ -46,7 +44,6 @@ const productInfo = [
   },
   {
     id: 3,
-    badgeImg: "",
     badgeTitle: "",
     image: productImg,
     imageTitle: "Builder 3",
@@ -61,7 +58,6 @@ const productInfo = [
   },
   {
     id: 4,
-    badgeImg: "",
     badgeTitle: "",
     image: productImg,
     imageTitle: "CDK",
